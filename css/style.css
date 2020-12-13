@@ -123,7 +123,7 @@ section.our-services {
     justify-content: space-between;
     flex-wrap: wrap; }
     section.our-services .description-services .text-services {
-      max-width: 50%;
+      max-width: 540px;
       position: relative;
       padding-left: 133px; }
       section.our-services .description-services .text-services:before {
@@ -250,13 +250,23 @@ section.about-company {
 
 section.consultation {
   padding-top: 50px; }
-  section.consultation .consultation-form {
+  section.consultation .consultation-form .text-consultation {
+    max-width: 540px;
     position: relative;
     padding-left: 133px; }
-    section.consultation .consultation-form:before {
+    section.consultation .consultation-form .text-consultation:before {
       content: '';
       border-top: 2px solid #ffc222;
       width: 100px;
       position: absolute;
       top: 15px;
       left: 0; }
+    section.consultation .consultation-form .text-consultation h3 {
+      font-family: Roboto-Medium;
+      font-size: 24px; }
+    section.consultation .consultation-form .text-consultation p {
+      font-family: PTSerif-Regular;
+      font-size: 14px;
+      color: #878787; }
+  section.consultation .consultation-img img {
+    width: 100%; }

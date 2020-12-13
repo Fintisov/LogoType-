@@ -27,6 +27,7 @@
 }
 
 @mixin default-heading {
+  max-width: 540px;
   position: relative;
   padding-left: 133px;
 
@@ -214,7 +215,6 @@ section.our-services {
     flex-wrap: wrap;
 
     .text-services {
-      max-width: 50%;
       @include default-heading;
     }
 
@@ -341,16 +341,26 @@ section.consultation {
   padding-top: 50px;
 
   .consultation-form {
-    @include default-heading;
+    .text-consultation {
+      @include default-heading;
 
-    h3 {
+      h3 {
+        font-family: Roboto-Medium;
+        font-size: 24px;
+      }
 
+      p {
+        font-family: PTSerif-Regular;
+        font-size: 14px;
+        color: $grey_color_text;
+      }
     }
+  }
 
-    p {
-
+  .consultation-img {
+    img {
+      width: 100%;
     }
-
   }
 }
 
