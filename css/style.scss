@@ -1,6 +1,47 @@
 @import "fonts.css";
 
+@mixin default-btn {
+  background: none;
+  border: 1px solid $yellow_color;
+  border-right-width: 20px;
+  border-radius: 0;
+  padding: 8px 20px;
+  box-shadow: none;
+  position: relative;
+  font-size: 14px;
+
+  &:after {
+    content: "\f105";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    right: -14px;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  &:hover {
+    background: $yellow_color;
+    transition: 0.4s;
+  }
+}
+
+@mixin default-heading {
+  position: relative;
+  padding-left: 133px;
+
+  &:before {
+    content: '';
+    border-top: 2px solid $yellow_color;
+    width: 100px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+  }
+}
+
 $yellow_color: #ffc222;
+$grey_color_text: #878787;
 
 header.header {
   .header-top {
@@ -47,7 +88,7 @@ header.header {
 
   .header-bottom {
     nav.navbar {
-      padding: 20px 5px;
+      padding: 20px 0;
 
       a.navbar-brand {
       }
@@ -110,22 +151,12 @@ section.offer-owl {
           }
 
           a.btn.btn-primary {
-            background: none;
-            border: 1px solid $yellow_color;
-            border-right-width: 20px;
-            border-radius: 0;
+            @include default-btn;
+            color: #fff;
             padding: 12px 20px;
-            box-shadow: none;
-            position: relative;
-            font-size: 14px;
 
-            &:after {
-              content: "\f105";
-              font-weight: 900;
-              font-family: "Font Awesome 5 Free";
-              position: absolute;
-              right: -14px;
-              font-size: 14px;
+            &:hover {
+              color: black;
             }
           }
         }
@@ -171,4 +202,156 @@ section.offer-owl {
     }
   }
 }
+
+section.our-services {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  .description-services {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .text-services {
+      max-width: 50%;
+      @include default-heading;
+    }
+
+    h3 {
+      font-family: Roboto-Medium;
+      font-size: 24px;
+    }
+
+    p {
+      font-family: PTSerif-Regular;
+      font-size: 14px;
+      color: $grey_color_text;
+    }
+  }
+
+  .btn-services {
+    padding-top: 23px;
+
+    a.btn.btn-primary {
+      font-size: 14px;
+      font-family: Roboto-Regular;
+      padding: 12px 38px;
+      background: none;
+      color: #000;
+      border: 3px solid #e6e6e6;
+      border-radius: 0;
+      box-shadow: none;
+
+      &:hover {
+        background: $yellow_color;
+        transition: 0.4s;
+      }
+    }
+  }
+
+  .service-catalog {
+    .services {
+      max-width: 370px;
+      padding: 15px 38px 40px 38px;
+      box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
+
+      &:nth-child(2) {
+        margin: auto 15px;
+      }
+
+      .wrap-text-services {
+        margin-bottom: 50px;
+        text-align: center;
+
+        .img-wrap {
+          margin-bottom: 30px;
+          height: 70px;
+          line-height: 70px;
+        }
+
+        h6 {
+          margin-bottom: 25px;
+          font-family: Roboto-Medium;
+          font-size: 18px;
+        }
+
+        p {
+          font-family: PTSerif-Regular;
+          font-size: 14px;
+          color: $grey_color_text;
+          height: 100px;
+          overflow: hidden;
+          -webkit-hyphens: auto;
+          -moz-hyphens: auto;
+          -ms-hyphens: auto;
+        }
+      }
+
+      .order-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        a.info-btn {
+          color: #000000;
+          font-family: Roboto-Regular;
+          font-size: 14px;
+          border-bottom: 1px solid;
+          text-decoration: none;
+        }
+
+        a.btn.btn-primary {
+          @include default-btn;
+          color: black;
+        }
+      }
+    }
+  }
+
+}
+
+
+section.about-company {
+  padding: 45px 0;
+  background-image: url(../images/bg-about-company.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  h3 {
+    font-family: Roboto-Medium;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-family: PTSerif-Regular;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  a.btn.btn-primary {
+    @include default-btn;
+  }
+}
+
+section.consultation {
+  padding-top: 50px;
+
+  .consultation-form {
+    @include default-heading;
+
+    h3 {
+
+    }
+
+    p {
+
+    }
+
+  }
+}
+
 

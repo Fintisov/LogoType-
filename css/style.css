@@ -26,7 +26,7 @@ header.header .header-top {
       header.header .header-top .consultation a i {
         margin-right: 10px; }
 header.header .header-bottom nav.navbar {
-  padding: 20px 5px; }
+  padding: 20px 0; }
   header.header .header-bottom nav.navbar .collapse.navbar-collapse {
     justify-content: flex-end; }
     header.header .header-bottom nav.navbar .collapse.navbar-collapse a.nav-item {
@@ -70,17 +70,25 @@ section.offer-owl {
         border: 1px solid #ffc222;
         border-right-width: 20px;
         border-radius: 0;
-        padding: 12px 20px;
+        padding: 8px 20px;
         box-shadow: none;
         position: relative;
-        font-size: 14px; }
+        font-size: 14px;
+        color: #fff;
+        padding: 12px 20px; }
         section.offer-owl .owl-carousel .owl-stage-outer .owl-item .item a.btn.btn-primary:after, section.offer-owl .owl-carousel .owl-stage-outer .owl-item.active .item a.btn.btn-primary:after {
           content: "\f105";
           font-weight: 900;
           font-family: "Font Awesome 5 Free";
           position: absolute;
           right: -14px;
-          font-size: 14px; }
+          font-size: 14px;
+          color: #fff; }
+        section.offer-owl .owl-carousel .owl-stage-outer .owl-item .item a.btn.btn-primary:hover, section.offer-owl .owl-carousel .owl-stage-outer .owl-item.active .item a.btn.btn-primary:hover {
+          background: #ffc222;
+          transition: 0.4s; }
+        section.offer-owl .owl-carousel .owl-stage-outer .owl-item .item a.btn.btn-primary:hover, section.offer-owl .owl-carousel .owl-stage-outer .owl-item.active .item a.btn.btn-primary:hover {
+          color: black; }
   section.offer-owl .owl-carousel .owl-nav button.owl-prev span {
     display: none; }
   section.offer-owl .owl-carousel .owl-nav button.owl-prev:after {
@@ -105,3 +113,150 @@ section.offer-owl {
     color: #fff;
     padding: 7px 16px;
     border: 1px solid; }
+
+section.our-services {
+  padding-top: 60px;
+  padding-bottom: 40px; }
+  section.our-services .description-services {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    section.our-services .description-services .text-services {
+      max-width: 50%;
+      position: relative;
+      padding-left: 133px; }
+      section.our-services .description-services .text-services:before {
+        content: '';
+        border-top: 2px solid #ffc222;
+        width: 100px;
+        position: absolute;
+        top: 15px;
+        left: 0; }
+    section.our-services .description-services h3 {
+      font-family: Roboto-Medium;
+      font-size: 24px; }
+    section.our-services .description-services p {
+      font-family: PTSerif-Regular;
+      font-size: 14px;
+      color: #878787; }
+  section.our-services .btn-services {
+    padding-top: 23px; }
+    section.our-services .btn-services a.btn.btn-primary {
+      font-size: 14px;
+      font-family: Roboto-Regular;
+      padding: 12px 38px;
+      background: none;
+      color: #000;
+      border: 3px solid #e6e6e6;
+      border-radius: 0;
+      box-shadow: none; }
+      section.our-services .btn-services a.btn.btn-primary:hover {
+        background: #ffc222;
+        transition: 0.4s; }
+  section.our-services .service-catalog .services {
+    max-width: 370px;
+    padding: 15px 38px 40px 38px;
+    box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14); }
+    section.our-services .service-catalog .services:nth-child(2) {
+      margin: auto 15px; }
+    section.our-services .service-catalog .services .wrap-text-services {
+      margin-bottom: 50px;
+      text-align: center; }
+      section.our-services .service-catalog .services .wrap-text-services .img-wrap {
+        margin-bottom: 30px;
+        height: 70px;
+        line-height: 70px; }
+      section.our-services .service-catalog .services .wrap-text-services h6 {
+        margin-bottom: 25px;
+        font-family: Roboto-Medium;
+        font-size: 18px; }
+      section.our-services .service-catalog .services .wrap-text-services p {
+        font-family: PTSerif-Regular;
+        font-size: 14px;
+        color: #878787;
+        height: 100px;
+        overflow: hidden;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto; }
+    section.our-services .service-catalog .services .order-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline; }
+      section.our-services .service-catalog .services .order-block a.info-btn {
+        color: #000000;
+        font-family: Roboto-Regular;
+        font-size: 14px;
+        border-bottom: 1px solid;
+        text-decoration: none; }
+      section.our-services .service-catalog .services .order-block a.btn.btn-primary {
+        background: none;
+        border: 1px solid #ffc222;
+        border-right-width: 20px;
+        border-radius: 0;
+        padding: 8px 20px;
+        box-shadow: none;
+        position: relative;
+        font-size: 14px;
+        color: black; }
+        section.our-services .service-catalog .services .order-block a.btn.btn-primary:after {
+          content: "\f105";
+          font-weight: 900;
+          font-family: "Font Awesome 5 Free";
+          position: absolute;
+          right: -14px;
+          font-size: 14px;
+          color: #fff; }
+        section.our-services .service-catalog .services .order-block a.btn.btn-primary:hover {
+          background: #ffc222;
+          transition: 0.4s; }
+
+section.about-company {
+  padding: 45px 0;
+  background-image: url(../images/bg-about-company.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; }
+  section.about-company h3 {
+    font-family: Roboto-Medium;
+    font-size: 24px;
+    margin-bottom: 40px; }
+  section.about-company p {
+    font-family: PTSerif-Regular;
+    font-size: 14px;
+    margin-bottom: 40px; }
+  section.about-company a.btn.btn-primary {
+    background: none;
+    border: 1px solid #ffc222;
+    border-right-width: 20px;
+    border-radius: 0;
+    padding: 8px 20px;
+    box-shadow: none;
+    position: relative;
+    font-size: 14px; }
+    section.about-company a.btn.btn-primary:after {
+      content: "\f105";
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      right: -14px;
+      font-size: 14px;
+      color: #fff; }
+    section.about-company a.btn.btn-primary:hover {
+      background: #ffc222;
+      transition: 0.4s; }
+
+section.consultation {
+  padding-top: 50px; }
+  section.consultation .consultation-form {
+    position: relative;
+    padding-left: 133px; }
+    section.consultation .consultation-form:before {
+      content: '';
+      border-top: 2px solid #ffc222;
+      width: 100px;
+      position: absolute;
+      top: 15px;
+      left: 0; }
